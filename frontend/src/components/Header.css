@@ -1,0 +1,78 @@
+/* File Path: src/components/Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #28a745;
+    padding: 20px;
+    color: white;
+    flex-wrap: wrap; /* Allows content to wrap on small screens */
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav-links a, .logout-btn {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 16px; /* Adjust size for better readability */
+}
+
+.nav-links .logout-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav-links a:hover, .logout-btn:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVENESS */
+
+/* For tablets and smaller screens (up to 768px wide) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack the logo and nav links vertically */
+        text-align: center;
+        padding: 15px;
+    }
+
+    .logo h1 {
+        font-size: 20px; /* Reduce the logo font size */
+    }
+
+    .nav-links a, .logout-btn {
+        font-size: 14px; /* Reduce nav link text size */
+        margin-left: 8px;
+        
+        margin-bottom: 10px; /* Add spacing between nav links */
+    }
+}
+
+/* For mobile devices (up to 480px wide) */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: 16px; /* Further reduce the logo font size for small screens */
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column; /* Stack the nav links vertically */
+    }
+
+    .nav-links a, .logout-btn {
+        font-size: 14px; /* Keep nav links small for small screens */
+        margin-bottom: 0px; /* Space between each link */
+        padding: 5px;
+    }
+}

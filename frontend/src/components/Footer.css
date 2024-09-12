@@ -1,0 +1,76 @@
+/* File Path: src/components/Footer.css */
+
+.footer {
+    background-color: #28a745;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 16px; /* Default font size */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+/* Responsiveness */
+
+/* For devices with a max width of 768px */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px;
+    }
+
+    .footer p {
+        margin: 10px 0;
+        font-size: 14px; /* Adjust font size for tablets */
+    }
+
+    .footer a {
+        font-size: 14px;
+    }
+}
+
+/* For devices with a max width of 480px (small phones) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .footer p {
+        margin: 10px 0;
+        font-size: 12px; /* Smaller font size for small screens */
+    }
+
+    .footer a {
+        font-size: 12px;
+    }
+}
+
+/* For very small devices (max width 320px) */
+@media (max-width: 320px) {
+    .footer {
+        padding: 8px;
+        font-size: 11px;
+    }
+
+    .footer p {
+        font-size: 11px; /* Further reduction for tiny screens */
+    }
+
+    .footer a {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,55 @@
+/* File path: src/components/TaskItem.css */
+
+.task-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.task-item h4 {
+    margin: 0;
+}
+
+.task-item p {
+    margin: 5px 0;
+}
+
+.task-item .status {
+    display: flex;
+    align-items: center;
+}
+
+.task-item .status .icon {
+    margin-right: 10px;
+}
+
+.task-item button {
+    margin-right: 10px;
+}
+
+/* Icon for status */
+.status-icon {
+    margin-right: 8px;
+    font-size: 14px; 
+}
+
+/* Button styles */
+.complete-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.completed-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: not-allowed;
+    border-radius: 4px;
+}

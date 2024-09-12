@@ -1,0 +1,67 @@
+/* Task list container */
+.task-list {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.task-list h3 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: center;
+    color: #333;
+}
+
+/* Button styles */
+.task-list button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Edit button styling */
+.task-list .edit-btn {
+    background-color: #28a745; 
+    color: white;
+}
+
+.task-list .edit-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Delete button styling */
+.task-list .delete-btn {
+    background-color: #dc3545; /* Red for Delete */
+    color: white;
+}
+
+.task-list .delete-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for buttons */
+@media (max-width: 768px) {
+    .task-list button {
+        font-size: 0.9em;
+        padding: 8px 12px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .task-list button {
+        font-size: 0.8em;
+        padding: 6px 10px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
