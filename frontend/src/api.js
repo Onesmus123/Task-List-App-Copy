@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://task-list-app-copy-backend.onrender.com';
 
 // Function to handle user registration
 export const registerUser = async (userData) => {
