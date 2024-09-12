@@ -2,7 +2,7 @@
 
 // Import necessary modules
 const express = require('express'); // Import express to create the server
-const cors = require('cors');
+const cors = require('cors'); // Import CORS middleware to handle CORS issues
 const dotenv = require('dotenv'); // Import dotenv to manage environment variables
 const connectDB = require('./config/db'); // Import database connection function
 const { errorHandler } = require('./middleware/errorMiddleware'); // Import error handling middleware
@@ -18,8 +18,14 @@ connectDB();
 // Create an express application
 const app = express();
 
+// Configure CORS to allow requests from specific origin
+app.use(cors({
+  origin: 'https://task-list-app-copy-frontend.onrender.com', // Replace with your frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}));
+
 // Middleware to parse JSON requests
-app.use(cors());
 app.use(express.json());
 
 // Define routes
